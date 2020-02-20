@@ -31,3 +31,35 @@
     transform: rotate(360deg);
   }
 }
+
+.card-holder {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  background-color: lightgrey;
+  margin: 2%;
+}
+
+.inner-box {
+  display: flex;
+  flex-direction: column; 
+  width: 75%;
+}
+
+.img-holder {
+  height: 75%;
+  margin-bottom: 4%;
+}
+
+.img-holder img {
+  object-fit: fill;
+}

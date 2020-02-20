@@ -20,7 +20,7 @@ export default function NasaList() {
     console.log("this is the info", nasaInfo);
 
     return (
-        <div>
+        <div className="card-holder">
             
             <NasaCard 
                     explanation={nasaInfo.explanation}

@@ -62,4 +62,5 @@
 
 .img-holder img {
   object-fit: fill;
+  max-width: 100%;
 }

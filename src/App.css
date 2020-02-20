@@ -63,4 +63,6 @@
 .img-holder img {
   object-fit: fill;
   max-width: 100%;
+  border-radius: 6px;
+  max-height: 800px;
 }

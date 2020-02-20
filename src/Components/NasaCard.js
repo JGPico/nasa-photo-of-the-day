@@ -7,15 +7,16 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 75%;
-background-color: lightgrey;
+background-color: #a5a6a8;
 margin: 2%;
+border-radius: 6px;
 `;
 
 const InnerBox = styled.div`
 display: flex;
 flex-direction: column;
 width: 75%;
-
+max-height: 100%;
 `;
 
 

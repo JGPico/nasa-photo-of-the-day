@@ -4,9 +4,23 @@ import NasaCard from "./NasaCard";
 import styled from "styled-components";
 
 const BackgroundHolder = styled.div`
-    display: flex;
-    justify-content: center;
-    background-image: url("../Assets/Galaxy.jpg");
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: 
+    url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80);
+    border-radius: 6px;
+    opacity: 0.5;
+    object-fit: stretch;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 `;
 
 const CardHolder = styled.div`
@@ -15,7 +29,7 @@ const CardHolder = styled.div`
     align-items: center;
     flex-direction: row;
     margin: 2%;
-    background: #5787cf;
+    border-radius: 6px;
 `;
 
 const SwitchButton = styled.button`
@@ -61,7 +75,7 @@ export default function NasaList() {
     console.log("this is the day", day);
 
     return (
-        <BackgroundHolder>
+        <>
             <CardHolder>
                 <SwitchButton onClick={dayDown}>Previous</SwitchButton>
                 <NasaCard 
@@ -81,7 +95,9 @@ export default function NasaList() {
                     )
                 })} */}
             </CardHolder>
+        <BackgroundHolder>
         </BackgroundHolder>
+        </>
     )
 
 }
